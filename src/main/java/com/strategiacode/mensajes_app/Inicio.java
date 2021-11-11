@@ -18,9 +18,9 @@ public class Inicio {
             System.out.println("SC SERVICIO DE MENSAJERIA:");
             System.out.println("1.- CREAR MENSAJE: ");
             System.out.println("2.- LISTAR MENSAJES");
-            System.out.println("3.- EDITAR MENSAJE: ");
-            System.out.println("4.- ELIMINAR MENSAJE: ");
-            System.out.println("5.- SALIR ");
+            System.out.println("3.- ELIMINAR MENSAJE: ");
+            System.out.println("4.- EDITAR MENSAJE: ");
+            System.out.println("5.- SALIR \n");
 
             opcion = sc.nextInt();
 
@@ -32,10 +32,10 @@ public class Inicio {
                     MensajesService.listarMensaje();
                     break;
                 case 3:
-                    MensajesService.editarMensaje();
+                    MensajesService.borrarMensaje();
                     break;
                 case 4:
-                    MensajesService.borrarMensaje();
+                    MensajesService.editarMensaje();
                     break;
                 default:
                     break;
